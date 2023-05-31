@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>LikeMe</title>
+</head>
+<body>
+
+    <h1>LikeME!</h1>
+    <div id="load"></div>
+    <div id="box">
+        <div class="cards" id="cardA">
+            <img class="imgCard" src="./images/foodLeft.jpg" alt="" srcset="">
+            <span class="textBox1">
+                <h2>Card Left</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptas ratione, repellat necessitatibus architecto voluptatem unde. Nulla, optio!</p>    
+            </span>
+            <a class="my-button" href="#">Add to cart</a>
+            <div id="l1" class="boxLiked"></div>
+            <img id="h1" class="heart" onclick="likeMe1()" src="./images/heart0.png" alt="" srcset="">
+        </div>
+
+        <div class="cards" id="cardCenter">
+            <img class="imgCard" src="./images/foodCenter.jpg" alt="" srcset="">
+            <span class="textBox3">
+                <h2>Card Center</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptas ratione, repellat necessitatibus architecto voluptatem unde. Nulla, optio!</p>    
+            </span>
+            <a class="my-button" href="#">Add to cart</a>
+            <div id="l3"></div>
+            <img id="h3" class="heart" onclick="likeMe3()" src="./images/heart0.png" alt="" srcset="">
+        </div>
+
+        <div class="cards" id="cardB">
+            <img class="imgCard" src="./images/foodRight.jpg" alt="" srcset="">
+            <span class="textBox2">
+                <h2>Card Right</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptas ratione, repellat necessitatibus architecto voluptatem unde. Nulla, optio!</p>    
+            </span>
+            <a class="my-button" href="#">Add to cart</a>
+            <div id="l2"></div>
+            <img id="h2" class="heart" onclick="likeMe2()" src="./images/heart0.png" alt="" srcset="">
+        </div>
+
+    </div>
+
+    <footer>by Fateh - 🧑🏻‍💻 My <a href="https://www.linkedin.com/in/fatehelboucherour/">LinkedIn</a></footer>
+
+    <script src="./app.js"></script>
+</body>
+</html>
