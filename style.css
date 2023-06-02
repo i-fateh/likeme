@@ -8,19 +8,18 @@ body {
     position: relative;
 }
 
-
 #box {
     width: 95%;
     display: flex; align-items: center; justify-content: center;
     height: auto;
     padding: 20px;
-    margin: 80px 0px;
+    margin: 0px;
     transform: scale(.9);
 }
 
 .cards {
     min-width: 350px; 
-    height: 470px; 
+    min-height: 515px; 
     border-radius: 20px; 
     background: #ffffff;
     margin: 10px 20px;
@@ -34,11 +33,6 @@ body {
     padding-top: 27px;
     box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
 }
-
-/* 
-.cards:nth-child(2n) {
-    background-color: blue;
-} */
 
 .cardIn {
     min-width: 350px; 
@@ -67,6 +61,12 @@ body {
     width: 300px;
     margin-bottom: 20px;
     z-index: 2;
+}
+
+.textBox1 p, .textBox2 p, .textBox3 p {
+   width: 100%;
+   font-size: 1.2em;
+   text-align: left;
 }
 
 .boxLiked,#l2 {
@@ -127,16 +127,16 @@ body {
   footer {
     position: relative;
     font-size: 16px;
+    margin-top: -15px;
   }
 
   a {
-    text-decoration: none;
+    text-decoration: underline;
     color: black;
   }
   a:hover {
     opacity: .7;
   }
-
 
   .my-button{
     width: 80%;
@@ -168,6 +168,14 @@ h1 {
     font-size: 4em;
     position: relative;
     line-height: 0px;
+    margin-top: 100px;
+}
+
+p {
+    font-size: 1.8em;
+    margin-top: 0px;
+    text-align: center;
+    width: 75%;
 }
 
 #load {
@@ -188,10 +196,6 @@ h1 {
       padding: 0px;
     }
 
-    footer {
-        margin-bottom: 15px;
-    }
-
     #box {
         display: flex; align-items: center; justify-content: center;
         flex-direction: column;
@@ -204,7 +208,4 @@ h1 {
         display: none;
     }
 
-    /* h1 {
-        display: none;
-    } */
   }
