@@ -1,6 +1,6 @@
 body {
     background: #f1f2f6;
-    min-width: 100vw; min-height: 100vh; 
+    min-width: 100vw; height: auto; 
     margin: 0px; padding: 0px;
     display: flex; align-items: center; justify-content: center;
     flex-direction: column;
@@ -8,44 +8,6 @@ body {
     position: relative;
 }
 
-h1 {
-    font-size: 5em;
-    position: absolute;
-    bottom: 30px;
-}
-
-#load {
-    width: 0px;
-    height: 10px;
-    border-radius: 20px;
-    position: absolute;
-    bottom: 60px;
-}
-
-a.my-button{
-    width: 80%;
-    height: auto;
-    background-color: #2f3542;
-
-    color: #ffffff;
-    font-size: 18px;
-    font-style: normal;
-    text-decoration: none;
-    padding: 17px 15px;
-    border: 0px solid #000;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-    z-index: 2;
-   }
-   a.my-button:hover{
-    opacity: .8;
-   }
-   a.my-button:active{
-    transform: scale(0.95);
-   }
 
 #box {
     width: 95%;
@@ -53,6 +15,7 @@ a.my-button{
     display: flex; align-items: center; justify-content: center;
     height: auto;
     padding: 20px;
+    margin: 80px 0px;
 }
 
 .cards {
@@ -161,6 +124,60 @@ a.my-button{
     z-index: 2;
 }
 
+  footer {
+    position: relative;
+    font-size: 16px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  a:hover {
+    opacity: .7;
+  }
+
+
+  .my-button{
+    width: 80%;
+    height: auto;
+    background-color: #2f3542;
+
+    color: #ffffff;
+    font-size: 18px;
+    font-style: normal;
+    text-decoration: none;
+    padding: 17px 15px;
+    border: 0px solid #000;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    z-index: 2;
+   }
+   .my-button:hover{
+    opacity: .8;
+   }
+   .my-button:active{
+    transform: scale(0.95);
+   }
+
+
+h1 {
+    font-size: 4em;
+    position: relative;
+    line-height: 0px;
+}
+
+#load {
+    width: 0px;
+    height: 10px;
+    border-radius: 20px;
+    position: relative;
+    margin: 20px;
+}
+
 
 @media only screen and (max-width: 1200px) {
     body {
@@ -176,8 +193,7 @@ a.my-button{
         position: relative;
     }
     footer {
-        position: relative;
-        top: 75px;
+        margin-top: 40px;
     }
 
     #box {
@@ -186,18 +202,11 @@ a.my-button{
         padding: 0px; margin: 0px;
     }
 
-  }
+    #load {
+        display: none;
+    }
 
-  footer {
-    position: absolute;
-    bottom: 20px;
-    font-size: 16px;
-  }
-
-  a {
-    text-decoration: none;
-    color: black;
-  }
-  a:hover {
-    opacity: .7;
+    h1 {
+        display: none;
+    }
   }
