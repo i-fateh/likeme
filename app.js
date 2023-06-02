@@ -160,7 +160,7 @@ function likeMe3(){
     stateCenter = !stateCenter
 
         if (window.matchMedia("(max-width: 1000px)").matches) {
-            h3.src = "./images/heart0.png"
+            h3.src = "./images/heartGreen.png"
             cardCenter.style.transform = "scale(1)"
             cardCenter.style.margin = "10px"
             l3.style.transition = ".4s"
@@ -177,7 +177,6 @@ function likeMe3(){
         document.querySelector('h1').style.color = "black"
         document.getElementById('load').style.width = "0px"
         document.getElementById('load').style.transition = ".3s cubic-bezier(1,1.59,0,1)"
-
 
         document.querySelector('.textBox3').style.color = "black"
         l3.style.height = "0px"
